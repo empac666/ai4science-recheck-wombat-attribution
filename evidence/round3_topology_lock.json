@@ -1,0 +1,328 @@
+{
+  "version": "R12-draft-3",
+  "purpose": "topology-only; no forward, gradient, integration or metric evaluation",
+  "rdkit_version": "2026.09.1",
+  "canonicalization": "MolFromSmiles -> RemoveAllHs -> MolToSmiles(canonical=True, isomericSmiles=True); retain all fragments",
+  "sort": "Python default Unicode code-point order, case-sensitive",
+  "seen": [
+    {
+      "id": "S4",
+      "input_smiles": "Br.CCN(CC)CCOC(=O)C(Cc1ccc(N(CCCl)CCCl)cc1)NC(C)=O",
+      "canonical_smiles": "Br.CCN(CC)CCOC(=O)C(Cc1ccc(N(CCCl)CCCl)cc1)NC(C)=O",
+      "heavy_atoms": 30,
+      "bonds": 29,
+      "atoms": 30,
+      "motif_atoms": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        26
+      ],
+      "parse_failed": false
+    },
+    {
+      "id": "S5",
+      "input_smiles": "CC1=NNC(=O)C(C(=O)O)C1",
+      "canonical_smiles": "CC1=NNC(=O)C(C(=O)O)C1",
+      "heavy_atoms": 11,
+      "bonds": 11,
+      "atoms": 11,
+      "motif_atoms": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "parse_failed": false
+    },
+    {
+      "id": "S12",
+      "input_smiles": "COc1ccc(OCc2cc(-c3ccco3)on2)c(C=O)c1",
+      "canonical_smiles": "COc1ccc(OCc2cc(-c3ccco3)on2)c(C=O)c1",
+      "heavy_atoms": 22,
+      "bonds": 24,
+      "atoms": 22,
+      "motif_atoms": [
+        18,
+        19,
+        20
+      ],
+      "parse_failed": false
+    },
+    {
+      "id": "M5",
+      "input_smiles": "NC(=O)NN=C1CCCC(C(=O)O)C1",
+      "canonical_smiles": "NC(=O)NN=C1CCCC(C(=O)O)C1",
+      "heavy_atoms": 14,
+      "bonds": 14,
+      "atoms": 14,
+      "motif_atoms": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "parse_failed": false
+    },
+    {
+      "id": "N12",
+      "input_smiles": "CC(=O)C",
+      "canonical_smiles": "CC(C)=O",
+      "heavy_atoms": 4,
+      "bonds": 3,
+      "atoms": 4,
+      "motif_atoms": [],
+      "parse_failed": false
+    }
+  ],
+  "csv_topology_audits": [
+    {
+      "pattern": 4,
+      "readout": "R1",
+      "csv": "repo/artifacts/explainability_method_tester/R1/MoleculeGDetector/positive_explainability_results.csv",
+      "csv_sha256": "fd574a20d862c87a5aa13c4774ddae965f6c6b8deec2f75a1a0d971458f1569d",
+      "csv_rows": 1146,
+      "unique_nonblank_canonical_smiles": 1137,
+      "nonblank_rows": 1137,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 124,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    },
+    {
+      "pattern": 5,
+      "readout": "R1",
+      "csv": "repo/artifacts/explainability_method_tester/R1/MoleculeHDetector/positive_explainability_results.csv",
+      "csv_sha256": "e6454fb93c1638ada427eb356a4c1ead3673cdb32d9b46493077a08cb9e5df60",
+      "csv_rows": 34,
+      "unique_nonblank_canonical_smiles": 31,
+      "nonblank_rows": 31,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 0,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    },
+    {
+      "pattern": 12,
+      "readout": "R1",
+      "csv": "repo/artifacts/explainability_method_tester/R1/MoleculeODetector/positive_explainability_results.csv",
+      "csv_sha256": "e8a54abcba370b19599c957882ac0b5ae0876baf3103a7182c33e34ead22cc05",
+      "csv_rows": 10000,
+      "unique_nonblank_canonical_smiles": 9999,
+      "nonblank_rows": 9999,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 419,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    },
+    {
+      "pattern": 4,
+      "readout": "R2",
+      "csv": "repo/artifacts/explainability_method_tester/R2/MoleculeGDetector/positive_explainability_results.csv",
+      "csv_sha256": "1b9f22bbbc7d0964f3eac33708e43ae434de30c5fde721638af43bb831dab828",
+      "csv_rows": 1146,
+      "unique_nonblank_canonical_smiles": 1137,
+      "nonblank_rows": 1137,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 124,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    },
+    {
+      "pattern": 5,
+      "readout": "R2",
+      "csv": "repo/artifacts/explainability_method_tester/R2/MoleculeHDetector/positive_explainability_results.csv",
+      "csv_sha256": "1dba177a11644e668bed929e83bfc871657763001c2519a05c1999f08c25557c",
+      "csv_rows": 34,
+      "unique_nonblank_canonical_smiles": 31,
+      "nonblank_rows": 31,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 0,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    },
+    {
+      "pattern": 12,
+      "readout": "R2",
+      "csv": "repo/artifacts/explainability_method_tester/R2/MoleculeODetector/positive_explainability_results.csv",
+      "csv_sha256": "30f2478fb42f21d7537293bca28a9306d5ed1feb435da12bdb82169e25b264ad",
+      "csv_rows": 10000,
+      "unique_nonblank_canonical_smiles": 9999,
+      "nonblank_rows": 9999,
+      "parse_failed": 0,
+      "outside_heavy_atom_range": 419,
+      "no_bonds": 0,
+      "motif_class_mismatch_nonblank": 0,
+      "motif_class_mismatch_blank": 0
+    }
+  ],
+  "mechanisms": [
+    {
+      "pattern": 4,
+      "input_smiles": "CC[N+](C)(CC)CCOC(=O)C(c1ccccc1)C1(O)CCCCC1C.[Br-]",
+      "atom_index_0based": 3,
+      "element": "C",
+      "nonmotif": true,
+      "canonical_smiles": "CC[N+](C)(CC)CCOC(=O)C(c1ccccc1)C1(O)CCCCC1C.[Br-]",
+      "heavy_atoms": 27,
+      "bonds": 27,
+      "atoms": 27,
+      "motif_atoms": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        18
+      ],
+      "parse_failed": false
+    },
+    {
+      "pattern": 5,
+      "input_smiles": "NC(=O)NN=C1CCCC(C(=O)O)C1",
+      "atom_index_0based": 7,
+      "element": "C",
+      "nonmotif": true,
+      "canonical_smiles": "NC(=O)NN=C1CCCC(C(=O)O)C1",
+      "heavy_atoms": 14,
+      "bonds": 14,
+      "atoms": 14,
+      "motif_atoms": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "parse_failed": false
+    }
+  ],
+  "conf_N": 16,
+  "conf": [
+    {
+      "canonical_smiles": "Br.CN(Cc1ccc(O)c(O)c1)C(=S)NCCc1ccccc1.CNCc1ccc(C)c(C)c1.CNCc1ccc(O)c(O)c1.Cc1ccc(C=O)cc1C.N#CSCCc1ccccc1",
+      "heavy_atoms": 66,
+      "bonds": 66
+    },
+    {
+      "canonical_smiles": "Br.Cc1ccccc1O.O=CO",
+      "heavy_atoms": 12,
+      "bonds": 10
+    },
+    {
+      "canonical_smiles": "BrCC1CCN1.CC(C)(C)OC=O",
+      "heavy_atoms": 13,
+      "bonds": 12
+    },
+    {
+      "canonical_smiles": "Brc1cc(Br)cc(Br)c1.CC(C)(O)c1cc(Br)cc(Br)c1.CC(C)(O)c1cc(Br)cc(C(N)CC(=O)O)c1.CC(C)(O)c1cc(Br)cc(C=O)c1.CCOC(=O)CC(=O)O.CCOC(=O)CC(N)c1cc(Br)cc(C(C)(C)O)c1.CCOC(=O)CC(N)c1cc(Br)cc(C(C)(C)O)c1",
+      "heavy_atoms": 98,
+      "bonds": 97
+    },
+    {
+      "canonical_smiles": "Brc1ccc(-c2nc(-c3ccccc3)c(-c3ccccc3)[nH]2)cc1.CC(=O)O.CO.N.O=C(C(=O)c1ccccc1)c1ccccc1.O=Cc1ccc(Br)cc1",
+      "heavy_atoms": 56,
+      "bonds": 57
+    },
+    {
+      "canonical_smiles": "Brc1ccc(Br)c(Br)c1.O=CO",
+      "heavy_atoms": 12,
+      "bonds": 11
+    },
+    {
+      "canonical_smiles": "Brc1ccc2[nH]c3c(c2c1)CCNC3.CC(C)c1ccccc1.O=CO",
+      "heavy_atoms": 26,
+      "bonds": 27
+    },
+    {
+      "canonical_smiles": "Brc1ccc2c(c1)CCO2.C=CC(OCC)OCC.CC1NCCC(c2ccc3c(c2)CCO3)C1COc1ccc2c(c1)C(=O)NC2.O=CC=Cc1ccc2c(c1)CCO2",
+      "heavy_atoms": 60,
+      "bonds": 65
+    },
+    {
+      "canonical_smiles": "Brc1ccc2c(c1)Cc1ccccc1-2.C.CC(C)c1ccnc(-n2c3ccccc3c3ccc(Br)cc32)c1.CC(C)c1ccnc(Cl)c1.O=CO[O-].[K+].[K+]",
+      "heavy_atoms": 54,
+      "bonds": 55
+    },
+    {
+      "canonical_smiles": "Brc1ccc2ccc(-c3c[nH]c4ccc(Br)cc34)nc2c1.NCc1ccc(CNC=O)cc1",
+      "heavy_atoms": 33,
+      "bonds": 36
+    },
+    {
+      "canonical_smiles": "Brc1ccccc1C1OCCO1.O=Cc1ccccc1Br",
+      "heavy_atoms": 21,
+      "bonds": 22
+    },
+    {
+      "canonical_smiles": "Brc1ccn[nH]1.O=CO",
+      "heavy_atoms": 9,
+      "bonds": 8
+    },
+    {
+      "canonical_smiles": "C#C.C#C.C#C.C#C.C1CCCCC1.CCCc1[nH+]c(C)ccc1C1CC[NH2+]C1.Cc1ccccc1.O=CN1CCCCC1",
+      "heavy_atoms": 44,
+      "bonds": 41
+    },
+    {
+      "canonical_smiles": "C#C.C#CC.CC.CCCC.Cc1cc(C=O)c2c(c1)CCCC2CN(C)C1CC23CN2CCC13",
+      "heavy_atoms": 35,
+      "bonds": 35
+    },
+    {
+      "canonical_smiles": "C#C.C=C(NCC(=O)N1CC2(CC2)CC1c1ncc(-c2ccc3cc(-c4ccc(-c5cnc(C6C7CCC(C7)N6C)[nH]5)cc4)ccc3c2)[nH]1)OC.CCC.CCOC(F)F.COC.O=CCNC=O",
+      "heavy_atoms": 69,
+      "bonds": 72
+    },
+    {
+      "canonical_smiles": "C#C.C=C.CC(C)(C)C(Nc1cccc(S(N)(=O)=O)c1)C(=O)N1CCCC1C(=O)NC1CC1.O=CNS(=O)(=O)C1CC1",
+      "heavy_atoms": 42,
+      "bonds": 42
+    }
+  ]
+}

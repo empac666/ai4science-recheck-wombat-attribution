@@ -1,0 +1,57 @@
+[
+  {
+    "label": "paper_abs",
+    "url": "https://arxiv.org/abs/2610.00713",
+    "checked_utc": "2026-10-11T02:05:49.004014+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2610.00713",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 41335,
+    "sha256": "a40ca6c22c9fc6497cd2d379b02ef19f8b3fef0bea6e628d3e5f35828f472984",
+    "seconds": 0.8858262680005282
+  },
+  {
+    "label": "paper_html",
+    "url": "https://arxiv.org/html/2610.00713v1",
+    "checked_utc": "2026-10-11T02:05:49.889947+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2610.00713v1",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 1607151,
+    "sha256": "b40ec8ebe5485b7228bfb183035d9f1a9655b5df41fb3ee5abd31f4f7a90c997",
+    "seconds": 2.139638869004557
+  },
+  {
+    "label": "paper_pdf",
+    "url": "https://arxiv.org/pdf/2610.00713v1",
+    "checked_utc": "2026-10-11T02:05:52.029655+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/pdf/2610.00713v1",
+    "content_type": "application/pdf",
+    "bytes": 8131972,
+    "sha256": "ec46b759739cc3f5cea38e98b50f91bb4bc97e77e8bfd0f668608570bee657cb",
+    "seconds": 2.8113199599902146
+  },
+  {
+    "label": "dataset_api",
+    "url": "{dataset_api_url}",
+    "checked_utc": "2026-10-11T02:05:54.841051+00:00",
+    "status": 200,
+    "final_url": "{dataset_api_url}",
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 3469,
+    "sha256": "b2aac00c150f15bf42a912f30c04752cee89fd9c033a469ccf793e358de102e3",
+    "seconds": 0.2549854399985634
+  },
+  {
+    "label": "public_reference",
+    "url": "{historical_reference_url}",
+    "checked_utc": "2026-10-11T02:05:55.096091+00:00",
+    "status": 200,
+    "final_url": "{historical_reference_url}",
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 5995,
+    "sha256": "da78b315a14ceabd9425850d78a30bf7a6c2507537f480090282657605c25c39",
+    "seconds": 0.17175753800256643
+  }
+]

@@ -1,0 +1,3 @@
+# SHA256 对应原文件名 prereg_draft.md 的最终 UTF-8 原始字节，含换行。
+# PREREG.md 是该文件逐字节复制；以下使用公开文件名供 sha256sum -c PREREG_SHA256 核验。
+4ce2b21c61aa5509662068d989dec15a13f882f97ede5a347bc5d7875d6ba0fb  PREREG.md

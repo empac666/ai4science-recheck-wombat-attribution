@@ -1,0 +1,80 @@
+{
+  "dataset_revision": "e86ec35687b0c0ebd1ecc151610a08224d8cf851",
+  "source_note": "Dataset account fields are omitted. Obtain dataset_base_url from the pinned upstream project README or supply it locally.",
+  "inputs": [
+    {
+      "file": "data/pattern_4.parquet",
+      "group": "data",
+      "bytes": 158085845,
+      "sha256": "b840873f8f0edb6e327e0b9af602c3c13fd16b48109a6473af16a743090f166c",
+      "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%204/validation_molecules.parquet?download=true"
+    },
+    {
+      "file": "data/pattern_5.parquet",
+      "group": "data",
+      "bytes": 142772488,
+      "sha256": "4f86dbb55b85104397634ab731819bcd014464b38cae05941a8bb6178dd148f6",
+      "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%205/validation_molecules.parquet?download=true"
+    },
+    {
+      "file": "data/pattern_12.parquet",
+      "group": "data",
+      "bytes": 203909943,
+      "sha256": "88f0a98b4b2c92a2c5ccc1aecd9792adc980ab5957828c1cba9ba07aafd343fb",
+      "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%2012/validation_molecules.parquet?download=true"
+    },
+    {
+      "file": "evidence/paper_abs.html",
+      "group": "paper",
+      "bytes": 41335,
+      "sha256": "a40ca6c22c9fc6497cd2d379b02ef19f8b3fef0bea6e628d3e5f35828f472984",
+      "url": "https://arxiv.org/abs/2610.00713"
+    },
+    {
+      "file": "evidence/paper_html.html",
+      "group": "paper",
+      "bytes": 1607151,
+      "sha256": "b40ec8ebe5485b7228bfb183035d9f1a9655b5df41fb3ee5abd31f4f7a90c997",
+      "url": "https://arxiv.org/html/2610.00713v1"
+    },
+    {
+      "file": "evidence/paper_pdf.pdf",
+      "group": "paper",
+      "bytes": 8131972,
+      "sha256": "ec46b759739cc3f5cea38e98b50f91bb4bc97e77e8bfd0f668608570bee657cb",
+      "url": "https://arxiv.org/pdf/2610.00713v1"
+    },
+    {
+      "file": "evidence/paper.txt",
+      "group": "paper",
+      "bytes": 167734,
+      "sha256": "cd16090a9a135706ef1030ed4635ed865da51498d700f08ac08201ef9d252657",
+      "derived_from": "evidence/paper_pdf.pdf",
+      "derivation": "pdftotext; original options/version not recorded; exact bytes may not be reproducible"
+    },
+    {
+      "file": "evidence/pattern_4_parquet_prefix.bin",
+      "group": "data",
+      "bytes": 4096,
+      "sha256": "99053b64583b1f09ea5ae5c38d7a9133cefcd7e61cb57e09c0a174feb42edbff",
+      "derived_from": "data/pattern_4.parquet",
+      "first_bytes": 4096
+    },
+    {
+      "file": "evidence/pattern_5_parquet_prefix.bin",
+      "group": "data",
+      "bytes": 4096,
+      "sha256": "9bcff3496d867026e45384885fb130c8864650340f3ff97f16c1157214922947",
+      "derived_from": "data/pattern_5.parquet",
+      "first_bytes": 4096
+    },
+    {
+      "file": "evidence/pattern_12_parquet_prefix.bin",
+      "group": "data",
+      "bytes": 4096,
+      "sha256": "423c6b9bd959dbc70617aa779d1c58735603442e3651ef8ed000a4b22a416fef",
+      "derived_from": "data/pattern_12.parquet",
+      "first_bytes": 4096
+    }
+  ]
+}

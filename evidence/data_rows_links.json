@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://datasets-server.huggingface.co/rows?dataset={dataset_id_urlencoded}&config=Pattern4&split=test&offset=0&length=5",
+    "checked_utc": "2026-10-11T02:06:45.024338+00:00",
+    "status": 200,
+    "bytes": 1073,
+    "sha256": "e757996b3a9baa512c061054d5b45a9c2f5d51259fc1f9243c96bd3a7e679fa4",
+    "seconds": 2.7648055630124873
+  },
+  {
+    "url": "https://datasets-server.huggingface.co/rows?dataset={dataset_id_urlencoded}&config=Pattern5&split=test&offset=0&length=5",
+    "checked_utc": "2026-10-11T02:06:47.789146+00:00",
+    "status": 200,
+    "bytes": 1034,
+    "sha256": "7a2a894318cc7b23f0de012dcd0ff47bb8a663144a9333d13f28ba5d145bf31d",
+    "seconds": 2.4586081680026837
+  },
+  {
+    "url": "https://datasets-server.huggingface.co/rows?dataset={dataset_id_urlencoded}&config=Pattern12&split=test&offset=0&length=5",
+    "checked_utc": "2026-10-11T02:06:50.247756+00:00",
+    "status": 200,
+    "bytes": 1041,
+    "sha256": "24058b7383d5bec7a2eb027a1d0a4e9db3cd74d33c59ba27f6ccbbda6b568560",
+    "seconds": 2.7090994950121967
+  }
+]

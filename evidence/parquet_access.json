@@ -1,0 +1,32 @@
+[
+  {
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%204/validation_molecules.parquet",
+    "checked_utc": "2026-10-11T02:07:20.766678+00:00",
+    "status": 206,
+    "content_range": "bytes 0-4095/158085845",
+    "bytes_read": 4096,
+    "magic": "PAR1",
+    "sha256_prefix": "99053b64583b1f09ea5ae5c38d7a9133cefcd7e61cb57e09c0a174feb42edbff",
+    "seconds": 2.1707769409986213
+  },
+  {
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%205/validation_molecules.parquet",
+    "checked_utc": "2026-10-11T02:07:22.937613+00:00",
+    "status": 206,
+    "content_range": "bytes 0-4095/142772488",
+    "bytes_read": 4096,
+    "magic": "PAR1",
+    "sha256_prefix": "9bcff3496d867026e45384885fb130c8864650340f3ff97f16c1157214922947",
+    "seconds": 1.9429812840098748
+  },
+  {
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%2012/validation_molecules.parquet",
+    "checked_utc": "2026-10-11T02:07:24.880701+00:00",
+    "status": 206,
+    "content_range": "bytes 0-4095/203909943",
+    "bytes_read": 4096,
+    "magic": "PAR1",
+    "sha256_prefix": "423c6b9bd959dbc70617aa779d1c58735603442e3651ef8ed000a4b22a416fef",
+    "seconds": 1.8712748289981391
+  }
+]

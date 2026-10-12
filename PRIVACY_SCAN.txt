@@ -1,0 +1,116 @@
+R12-final 公开材料隐私扫描与交付核验
+
+扫描工作目录：公开目录。原始锁定和逐字节副本校验的工作目录为项目根目录。
+内容与文件名扫描仅排除 PRIVACY_SCAN.txt 自身；该报告必须记录原始检索词，排除自身避免检索命令自匹配。其他全部文件（含隐藏文件与 SHA256SUMS）均在扫描范围内。
+rg 退出码 1 表示无匹配，0 表示有匹配，其他退出码视为扫描错误。下列 STDOUT 与 STDERR 均完整保存，不截断。
+无命中仅表示下列检索规则通过。发布条件与正式实验的科学结论分开，正式实验尚未运行。
+
+指定敏感词扫描
+$ rg --hidden --no-ignore --text --line-number --with-filename --ignore-case --color never --glob '!PRIVACY_SCAN.txt' -- 'SST|固态变压器|XIAOMI|LAPTOP|4O6K81NG|张铭博|zmb666|/home/box|D:\\|@gmail' .
+退出码: 1
+STDOUT（完整）:
+(空)
+STDERR（完整）:
+(空)
+
+补充路径、邮箱与账号地址扫描
+$ rg --hidden --no-ignore --text --line-number --with-filename --ignore-case --color never --glob '!PRIVACY_SCAN.txt' -- '/home/|/Users/|/workspace/|[A-Za-z]:\\|[[:alnum:]_.%+-]+@[[:alnum:].-]+\.[[:alpha:]]{2,}|huggingface\.co/[^ /"{}?]+/[^ /"{}?]+|github\.com/[^ /"{}?]+/[^ /"{}?]+' .
+退出码: 1
+STDOUT（完整）:
+(空)
+STDERR（完整）:
+(空)
+
+交付文件名扫描
+$ rg --files --hidden --no-ignore --glob '!PRIVACY_SCAN.txt' . | rg --line-number --ignore-case --color never -- 'SST|固态变压器|XIAOMI|LAPTOP|4O6K81NG|张铭博|zmb666|/home/box|D:\\|@gmail'
+文件枚举退出码: 0
+检索退出码: 1
+STDOUT（完整）:
+(空)
+文件枚举 STDERR（完整）:
+(空)
+检索 STDERR（完整）:
+(空)
+
+原始锁定校验
+$ sha256sum -c evidence/prereg_lock.sha256
+退出码: 0
+STDOUT（完整）:
+prereg_draft.md: OK
+STDERR（完整）:
+(空)
+
+逐字节副本校验
+$ cmp prereg_draft.md public_repo/PREREG.md
+退出码: 0
+STDOUT（完整）:
+(空)
+STDERR（完整）:
+(空)
+
+公开预注册校验
+$ sha256sum -c PREREG_SHA256
+退出码: 0
+STDOUT（完整）:
+PREREG.md: OK
+STDERR（完整）:
+(空)
+
+公开文件清单校验
+$ sha256sum -c SHA256SUMS
+退出码: 0
+STDOUT（完整）:
+.r12_public_sanitization.json: OK
+EXTERNAL_INPUTS.json: OK
+EXTERNAL_SHA256SUMS: OK
+PREREG.md: OK
+PREREG_SHA256: OK
+README.md: OK
+UPSTREAM_SHA256SUMS: OK
+agy_review.md: OK
+agy_review3.md: OK
+evidence/data_rows_links.json: OK
+evidence/dataset_api.json: OK
+evidence/feasibility_manifest.json: OK
+evidence/hf_pattern_12_rows.json: OK
+evidence/hf_pattern_4_rows.json: OK
+evidence/hf_pattern_5_rows.json: OK
+evidence/install_core.log: OK
+evidence/install_torch.log: OK
+evidence/links_initial.json: OK
+evidence/mechanism_examples.json: OK
+evidence/numerical_midpoint_probe.json: OK
+evidence/numerical_midpoint_probe.log: OK
+evidence/numerical_probe.json: OK
+evidence/numerical_probe.log: OK
+evidence/parquet_access.json: OK
+evidence/parquet_full_manifest.json: OK
+evidence/prereg_lock.sha256: OK
+evidence/requirements_cpu.txt: OK
+evidence/round3_topology_lock.json: OK
+evidence/smoke.log: OK
+evidence/smoke_result.json: OK
+feasibility.md: OK
+grok_R12fix.log: OK
+grok_review.md: OK
+grok_review2.md: OK
+grok_review3.md: OK
+response.md: OK
+response2.md: OK
+response3.md: OK
+scripts/download_full.py: OK
+scripts/lock_topology.py: OK
+scripts/numerical_probe.py: OK
+scripts/smoke.py: OK
+STDERR（完整）:
+(空)
+
+其他交付检查
+SHA256SUMS 覆盖文件数: 42
+覆盖范围: 全部文件（含隐藏文件），仅排除 SHA256SUMS 与 PRIVACY_SCAN.txt
+去标识清单核验通过: 13 条
+单文件大小门槛: 5,000,000 字节（5MB）
+超限文件（完整）: []
+符号链接（完整）: []
+
+STATUS: PUBLISH_READY

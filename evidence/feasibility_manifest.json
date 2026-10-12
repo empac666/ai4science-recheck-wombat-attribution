@@ -1,0 +1,75 @@
+{
+  "purpose": "local feasibility evidence; not a registration or lock",
+  "checked_utc": "2026-10-11T02:12:42.542423+00:00",
+  "checks": {
+    "prereg_draft.md": {
+      "privacy_pass": true,
+      "problems": [],
+      "has_result_final_line": true
+    },
+    "feasibility.md": {
+      "privacy_pass": true,
+      "problems": [],
+      "has_result_final_line": true
+    },
+    "smoke.py": {
+      "syntax_pass": true
+    },
+    "numerical_probe.py": {
+      "syntax_pass": true
+    },
+    "upstream_tracked_files_unchanged": true,
+    "smoke_pass": true,
+    "no_public_lock_created": true
+  },
+  "files": {
+    "prereg_draft.md": {
+      "bytes": 18838,
+      "sha256": "291d4e07fc18b8693757f7771ae037b0b2bb87c43ed64aa98f0b38acc65a4539"
+    },
+    "feasibility.md": {
+      "bytes": 3081,
+      "sha256": "0be45b13a446adf8ebcb2c79886ebc83cb997f00fd8005cb801a978b8f07a15b"
+    },
+    "scripts/smoke.py": {
+      "bytes": 4671,
+      "sha256": "52fae5662242285eee4e71247ad293173c4ff319f71ee8928c5ee34a8b74a58c"
+    },
+    "scripts/numerical_probe.py": {
+      "bytes": 1754,
+      "sha256": "fe17ba0252f8e1e5700ced57cf68746f290756c1cbebaf70b38c1e7d54e0998f"
+    },
+    "evidence/links_initial.json": {
+      "bytes": 2156,
+      "sha256": "d60ef03633ba810a1ae0170811026c254ee0258068cf7c5ac42fcb4e49eb4548"
+    },
+    "evidence/data_rows_links.json": {
+      "bytes": 1056,
+      "sha256": "adadf87b9beb10b2b78e9c34d520a3740ea246de4519999810f24d450e2bf133"
+    },
+    "evidence/parquet_access.json": {
+      "bytes": 1425,
+      "sha256": "a68a753e654422d0d72a0da09f932d33ff6c240e2d1acd14ace34965cf9db6b3"
+    },
+    "evidence/smoke_result.json": {
+      "bytes": 7464,
+      "sha256": "73394f1616490b505f4fe056fce3fa76b44536b5c14400155b6cd5f480e5d4b7"
+    },
+    "evidence/numerical_probe.json": {
+      "bytes": 390,
+      "sha256": "35a9615643cc4d3b1daf34deffd5f2fe5aed5ff3404557b23939ebf9a244ac14"
+    },
+    "evidence/numerical_midpoint_probe.json": {
+      "bytes": 456,
+      "sha256": "6835a35e61763f2b29784b37afd30c0d0b48da94fe498d0d89d8ccf88ffaaed3"
+    },
+    "evidence/mechanism_examples.json": {
+      "bytes": 333,
+      "sha256": "3f7b05e21a80255701a6accea42d0e9c2170459d9a083c39c48f71974ec1d722"
+    },
+    "evidence/requirements_cpu.txt": {
+      "bytes": 837,
+      "sha256": "895133f3f05ad3971d2ca9488ac6e44338cfc6319121eb91572d8095532f3d74"
+    }
+  }
+}

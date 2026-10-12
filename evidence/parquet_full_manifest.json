@@ -1,0 +1,38 @@
+[
+  {
+    "pattern": 4,
+    "revision": "e86ec35687b0c0ebd1ecc151610a08224d8cf851",
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%204/validation_molecules.parquet?download=true",
+    "file": "data/pattern_4.parquet",
+    "bytes": 158085845,
+    "sha256": "b840873f8f0edb6e327e0b9af602c3c13fd16b48109a6473af16a743090f166c",
+    "rows": 5543482,
+    "row_groups": 6,
+    "schema": "SMILES: large_string\nMoleculeGDetector: bool\nORIGIN: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 438",
+    "seconds": 3.075209228991298
+  },
+  {
+    "pattern": 5,
+    "revision": "e86ec35687b0c0ebd1ecc151610a08224d8cf851",
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%205/validation_molecules.parquet?download=true",
+    "file": "data/pattern_5.parquet",
+    "bytes": 142772488,
+    "sha256": "4f86dbb55b85104397634ab731819bcd014464b38cae05941a8bb6178dd148f6",
+    "rows": 5067224,
+    "row_groups": 5,
+    "schema": "SMILES: large_string\nMoleculeHDetector: bool\nORIGIN: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 438",
+    "seconds": 3.0096736659907037
+  },
+  {
+    "pattern": 12,
+    "revision": "e86ec35687b0c0ebd1ecc151610a08224d8cf851",
+    "url": "{dataset_base_url}/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%2012/validation_molecules.parquet?download=true",
+    "file": "data/pattern_12.parquet",
+    "bytes": 203909943,
+    "sha256": "88f0a98b4b2c92a2c5ccc1aecd9792adc980ab5957828c1cba9ba07aafd343fb",
+    "rows": 7653360,
+    "row_groups": 8,
+    "schema": "SMILES: large_string\nMoleculeODetector: bool\nORIGIN: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 438",
+    "seconds": 3.141432201009593
+  }
+]

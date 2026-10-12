@@ -1,0 +1,20 @@
+[
+  {
+    "model": "MoleculeHDetector",
+    "steps": 5000,
+    "method": "riemann_middle",
+    "dtype": "float64",
+    "seconds": 5.562376375994063,
+    "convergence_delta": 0.001997411634824031,
+    "all_finite": true
+  },
+  {
+    "model": "SmoothingMoleculeODetector",
+    "steps": 5000,
+    "method": "riemann_middle",
+    "dtype": "float64",
+    "seconds": 5.651908258005278,
+    "convergence_delta": -0.010842667672323114,
+    "all_finite": true
+  }
+]
