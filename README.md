@@ -112,3 +112,11 @@ Round 12 of “Can We Trust AI's Reasons?” studies attribution reliability in 
 Inputs, atom identities, label definitions, integration methods, thresholds, failure handling and stopping rules are frozen. High-step comparisons use a locked panel of 16 molecules and float64 midpoint integration at 10,000 and 20,000 steps. Mechanism claims require all ordered qualification gates and scientific conditions. The known full-cohort mismatch currently prevents the main mechanism conclusion; P4 retains the status “cohort not aligned.” Any future high-step finding applies only to the locked panel, and the ablation also changes the receptive field.
 
 Large datasets, the paper PDF and the full upstream code are external inputs identified by pinned versions and hashes. Use `scripts/`, `EXTERNAL_SHA256SUMS`, `UPSTREAM_SHA256SUMS` and `PREREG_SHA256` with the documented local configuration. Dataset account fields use the `{dataset_base_url}` placeholder. This package contains the locked protocol and supporting evidence; publication readiness does not imply experimental success.
+
+## Figures / 图
+
+下列三张图由 [scripts/make_figures_v2.py](scripts/make_figures_v2.py) 读取同级汇总 `../run/v1/results/summary.json` 重绘。图上的数只来自该文件：队列未对齐或相关未定义时保持未定义，不把缺失补成 0。本节只加入图；结果正文入库由另一流程负责。
+
+- [Conf 十六项技术检查](figures/conf16_technical_checks.png)：锁定面板 N=16，常规与 anti-IG 的完整性、L1 和两步 AUROC 差，对照冻结门槛。
+- [队列对齐与置乱相关](figures/alignment_and_permutation.png)：八项发表队列的有限结果占固定分母的比例；Conf 置乱后 Spearman 相关未定义。
+- [完美率与感受野](figures/perfect_rate_receptive_field.png)：高步 Conf 的完美率可以计算；全队列消融的完美率因未对齐而不可计算。汇总中的说明是：完美率变化同时混合了冗余传播层的移除和感受野从 6 跳缩到 2 跳。
