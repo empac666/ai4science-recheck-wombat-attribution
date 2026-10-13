@@ -2,7 +2,7 @@
 
 ## WOMBAT 图神经网络归因可信度
 
-**当前状态：R12-final 已锁定预注册，尚未跑正式实验。** 本地锁定时间为 2026-10-12 12:05:15（北京时间，UTC+08:00）。本目录保存方案、审稿与回应、去标识证据小文件和辅助脚本；已有冒烟及数值探针属于锁定前的校准材料。正式样本、压力网格和高步确认尚未执行，当前没有确认性实验结论。
+**当前状态：R12 已完成，结果见 [RESULTS.md](RESULTS.md)。** R12-final 的本地锁定时间为 2026-10-12 12:05:15（北京时间，UTC+08:00），锁定文本与校验文件保持原字节。正式汇总见 [results/summary.json](results/summary.json)，实现与恢复记录见 [DEVIATIONS.md](DEVIATIONS.md)。机制主条款因 P0 与 P3 低步队列未对齐无法判定；已有冒烟及数值探针仍属于锁定前校准材料。
 
 [PREREG.md](PREREG.md) 是锁定原稿 `prereg_draft.md` 的逐字节副本，包含原始 UTF-8 字节与换行，SHA256 为：
 
@@ -10,7 +10,7 @@
 4ce2b21c61aa5509662068d989dec15a13f882f97ede5a347bc5d7875d6ba0fb
 ```
 
-本 README 提供导读；所有正式规则、状态优先级与终端句以 R12-final 原文为准。后续方案变更须另立版本并记录偏离，保留本次锁定文本与校验文件。公开材料准备完成仅表示交付文件具备发布条件；本次没有初始化版本库、推送或公开登记，也没有启动正式实验。
+本 README 提供导读；所有正式规则、状态优先级与终端句以 R12-final 原文为准。后续方案变更须另立版本并记录偏离，保留本次锁定文本与校验文件。正式运行已完成；文件入库不改变锁定规则、资格出口或结论范围。
 
 ## 问题
 
@@ -29,9 +29,9 @@
 
 `C` 是节点与边的有符号 IG 总和相对端点输出差的绝对残差，分母为 `max(1, |端点输出差|)`。门槛在看过两例校准探针后冻结，因此对这两例不能称为无偏确认；它们不进入 Conf 的确认投票。描述性 bootstrap、置乱种子和单次调用超时按预注册固定，不用于调整门槛。
 
-## 将要跑什么
+## 正式执行项目
 
-正式执行前，先核对输入哈希、拓扑清单、五条排除键和全部 16 条 Conf 键，记录正式执行脚本的字节哈希。预定工作如下：
+以下保留锁定方案中的计算与用途；执行结果、逐项状态及未定义量见 [RESULTS.md](RESULTS.md)。
 
 | 项目 | 预定计算与用途 |
 |---|---|
@@ -53,15 +53,15 @@
 - **机制复现条件：** 全部资格成立，且 P1、P2 与 P3 的全部科学条件成立，才允许输出“机制在这两例和这个 Conf 上复现”。其他可读结果按锁定公式报告具体达标事实，禁止事后调整窗口、队列或门槛。
 - **P4 与 P5：** P4 只有在完整集合对齐、调用完整有限后才按第 4 节逐项容差判断通过或不通过。P5 要求分类保持、完美率提高至少 0.50、平均 `L` 下降至少 0.01；改变分类规则、缺值、技术失败与队列不对齐按各自状态报告。
 
-**已知资格限制：当前 P4 总状态为“队列未对齐”。** 拓扑审计显示，Pattern 4 / 12 的阳性归因队列分别有 124 / 419 条超出 2–100 重原子的 CPU 子域。anti-IG 共享 Pattern 12 的完整分母，P3 低步条款因此无法判定。若未触发更早停止，主终端将按第 2 条以“输入或实现资格不足”结束，不输出机制科学句，也不宣称发表数字不通过。预算和子域内计算都不能解除此限制。
+**已知资格限制：当前 P4 总状态为“队列未对齐”。** 拓扑审计显示，Pattern 4 / 12 的阳性归因队列分别有 124 / 419 条超出 2–100 重原子的 CPU 子域。anti-IG 共享 Pattern 12 的完整分母，P3 低步条款因此无法判定。正式主终端已按第 2 条以“输入或实现资格不足”结束，机制主条款无法判定，也不宣称未对齐项的发表数字不通过。预算和子域内计算都不能解除此限制。
 
-未来报告须同时给出 `(主终端句, P4 总状态, P5 状态, 置乱句)`，四项互不改写门槛。技术失败比例使用预定分母，重试成功也保留首次失败标记；缺值不能用成功子集填补。
+正式报告同时给出 `(主终端句, P4 总状态, P5 状态, 置乱句)`，四项互不改写门槛。技术失败比例使用预定分母，重试成功也保留首次失败标记；缺值不能用成功子集填补。
 
 ## 结论范围
 
 结果只覆盖受控白盒、两例点名机制分子、冻结的归因定义及其对应队列。P2 与 P3 高步结果仅适用于固定的 16 条 Conf 清单，不能外推到 Pattern 12 的单片段醛队列、全队列、其他 motif 或自然分布。P5 无法把排序变化单独归因于冗余扩散，因为它同时缩小感受野。CPU 环境与上游环境存在差异，须按资格审计报告。
 
-当前可公开的事实是规则已经本地锁定，既有校准与拓扑证据可核查，正式实验尚未运行。
+正式运行结果已公开于 [RESULTS.md](RESULTS.md)；P2 与 P3 高步有可读结果，完整队列资格限制仍然成立。
 
 ## 复现材料与步骤
 
@@ -101,14 +101,22 @@
    - `smoke.py` 用于既有 CPU 接口冒烟与校准，`numerical_probe.py` 用于两例 5,000 步探针的重放。这些计算不进入正式确认投票。
    - `lock_topology.py` 仅整理拓扑与清单。可在独立目录核对现有结果；正式执行仍使用已锁定清单，不重新抽样或覆盖公开证据。
 
-   辅助脚本会写入部分证据文件，重放应在独立目录进行。R12-final 正式执行器仍需逐项实现冻结规则，在执行前记录其字节哈希；现有辅助脚本各自的用途和参数见源码。本次收尾只核验本地文件，没有运行下载或实验脚本。
+   辅助脚本会写入部分证据文件，重放应在独立目录进行。现有辅助脚本各自的用途和参数见源码。正式执行与恢复实现记录见 [DEVIATIONS.md](DEVIATIONS.md)；公开汇总和小型审计 JSON 见 [results/](results/)。
 
-4. 查阅审稿与回应、证据小文件及 [.r12_public_sanitization.json](.r12_public_sanitization.json)。去标识记录列明原始与公开字节哈希；预注册副本始终保持锁定字节。扫描命令及完整输出见 [PRIVACY_SCAN.txt](PRIVACY_SCAN.txt)。`SHA256SUMS` 覆盖本目录全部文件，仅排除清单自身与扫描报告。
+4. 查阅审稿与回应、证据小文件及 [.r12_public_sanitization.json](.r12_public_sanitization.json)。去标识记录列明原始与公开字节哈希；预注册副本始终保持锁定字节。脱敏扫描方法与核验结果见 [PRIVACY_SCAN.txt](PRIVACY_SCAN.txt)。`SHA256SUMS` 覆盖本目录全部公开文件，仅排除清单自身。
 
 ## English abstract
 
-Round 12 of “Can We Trust AI's Reasons?” studies attribution reliability in WOMBAT molecular graph neural networks with known classification rules. The preregistered questions concern a fixed transient gradient window, signed Integrated Gradients on two fixed non-motif atoms, and the perfect-ranking gap between regular and anti-IG models after numerical qualification. R12-final is locally locked; formal experiments have not run. Existing smoke checks and numerical probes are calibration evidence.
+Round 12 of “Can We Trust AI's Reasons?” studies attribution reliability in WOMBAT molecular graph neural networks with known classification rules. The preregistered questions concern a fixed transient gradient window, signed Integrated Gradients on two fixed non-motif atoms, and the perfect-ranking gap between regular and anti-IG models after numerical qualification. R12-final remains locally locked and formal execution is complete; see [RESULTS.md](RESULTS.md). Existing smoke checks and numerical probes remain calibration evidence. The main mechanism clause is undecidable because the full cohorts are not aligned.
 
-Inputs, atom identities, label definitions, integration methods, thresholds, failure handling and stopping rules are frozen. High-step comparisons use a locked panel of 16 molecules and float64 midpoint integration at 10,000 and 20,000 steps. Mechanism claims require all ordered qualification gates and scientific conditions. The known full-cohort mismatch currently prevents the main mechanism conclusion; P4 retains the status “cohort not aligned.” Any future high-step finding applies only to the locked panel, and the ablation also changes the receptive field.
+Inputs, atom identities, label definitions, integration methods, thresholds, failure handling and stopping rules are frozen. High-step comparisons use a locked panel of 16 molecules and float64 midpoint integration at 10,000 and 20,000 steps. Mechanism claims require all ordered qualification gates and scientific conditions. The full-cohort mismatch prevents the main mechanism conclusion; P4 retains the status “cohort not aligned.” The reported high-step findings apply only to the locked panel, and the ablation also changes the receptive field.
 
-Large datasets, the paper PDF and the full upstream code are external inputs identified by pinned versions and hashes. Use `scripts/`, `EXTERNAL_SHA256SUMS`, `UPSTREAM_SHA256SUMS` and `PREREG_SHA256` with the documented local configuration. Dataset account fields use the `{dataset_base_url}` placeholder. This package contains the locked protocol and supporting evidence; publication readiness does not imply experimental success.
+Large datasets, the paper PDF and the full upstream code are external inputs identified by pinned versions and hashes. Use `scripts/`, `EXTERNAL_SHA256SUMS`, `UPSTREAM_SHA256SUMS` and `PREREG_SHA256` with the documented local configuration. Dataset account fields use the `{dataset_base_url}` placeholder. This package contains the locked protocol, supporting evidence and sanitized formal results; completion does not imply mechanism replication.
+
+## Figures / 图
+
+下列三张图由 [scripts/make_figures_v2.py](scripts/make_figures_v2.py) 读取正式运行汇总 `../run/v1/results/summary.json` 重绘；该汇总现已原样公开为 [results/summary.json](results/summary.json)。图上的数只来自该汇总：队列未对齐或相关未定义时保持未定义，不把缺失补成 0。结果正文与三图解读见 [RESULTS.md](RESULTS.md)。
+
+- [Conf 十六项技术检查](figures/conf16_technical_checks.png)：锁定面板 N=16，常规与 anti-IG 的完整性、L1 和两步 AUROC 差，对照冻结门槛。
+- [队列对齐与置乱相关](figures/alignment_and_permutation.png)：八项发表队列的有限结果占固定分母的比例；Conf 置乱后 Spearman 相关未定义。
+- [完美率与感受野](figures/perfect_rate_receptive_field.png)：高步 Conf 的完美率可以计算；全队列消融的完美率因未对齐而不可计算。汇总中的说明是：完美率变化同时混合了冗余传播层的移除和感受野从 6 跳缩到 2 跳。

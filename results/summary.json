@@ -1,0 +1,1189 @@
+{
+  "run": "R12run2",
+  "status": "DONE",
+  "phase": "finished",
+  "started_utc": "2026-10-12T14:47:31+00:00",
+  "heartbeat_utc": "2026-10-13T10:38:06+00:00",
+  "first_batch": {
+    "m": 16,
+    "returned": 16,
+    "Tobs_seconds": 0.6822858579980675,
+    "Tpred_seconds": 3067.3845793546748,
+    "Tpred_hours": 0.8520512720429653,
+    "all_successful": true,
+    "workers": 4,
+    "note": "Original calls retained in P4; diagnostic retries excluded from Tobs."
+  },
+  "stop_reason": null,
+  "protocol_sha256": "4ce2b21c61aa5509662068d989dec15a13f882f97ede5a347bc5d7875d6ba0fb",
+  "P4": [
+    {
+      "item": "pattern4_R2",
+      "pattern": 4,
+      "readout": "R2",
+      "model": "regular",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 1137,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 1137,
+        "finite": 1013,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    },
+    {
+      "item": "pattern4_R1",
+      "pattern": 4,
+      "readout": "R1",
+      "model": "regular",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 1137,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 1137,
+        "finite": 1013,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    },
+    {
+      "item": "pattern4_count",
+      "pattern": 4,
+      "readout": "R2",
+      "model": "regular",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 1137,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 1137,
+        "finite": 1013,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    },
+    {
+      "item": "pattern5_R2",
+      "pattern": 5,
+      "readout": "R2",
+      "model": "regular",
+      "status": "通过",
+      "failures": 0,
+      "failure_denominator": 31,
+      "aligned": true,
+      "conditions": {
+        "auroc": true,
+        "ap": true,
+        "imperfect_count": true,
+        "each_auroc_within_0.01": true
+      },
+      "statistics": {
+        "expected": 31,
+        "finite": 31,
+        "complete": true,
+        "M": {
+          "denominator": 31,
+          "auroc": 0.9950372208436725,
+          "ap": 0.999645515774548,
+          "perfect_count": 29,
+          "perfect_rate": 0.9354838709677419,
+          "imperfect_count": 2,
+          "L": 0.0008367566812422968,
+          "bootstrap_95": {
+            "auroc": [
+              0.9875930521091811,
+              1.0
+            ],
+            "ap": [
+              0.9991137894363699,
+              1.0
+            ],
+            "perfect_rate": [
+              0.8387096774193549,
+              1.0
+            ],
+            "L": [
+              0.0,
+              0.0021434231330790827
+            ]
+          }
+        },
+        "S": {
+          "denominator": 22,
+          "auroc": 0.993006993006993,
+          "ap": 0.9995004995004994,
+          "perfect_count": 20,
+          "perfect_rate": 0.9090909090909091,
+          "imperfect_count": 2,
+          "L": 0.0011790662326596,
+          "bootstrap_95": {
+            "auroc": [
+              0.9825174825174826,
+              1.0
+            ],
+            "ap": [
+              0.9987512487512485,
+              1.0
+            ],
+            "perfect_rate": [
+              0.7727272727272727,
+              1.0
+            ],
+            "L": [
+              0.0,
+              0.0030202780511568894
+            ]
+          }
+        },
+        "overflow": 0.0,
+        "overflow_denominator": 22,
+        "overflow_sentence": "本队列上两套标签的宏平均 AUROC 差距小于 0.02。"
+      },
+      "tolerance_enabled": true
+    },
+    {
+      "item": "pattern5_R1",
+      "pattern": 5,
+      "readout": "R1",
+      "model": "regular",
+      "status": "通过",
+      "failures": 0,
+      "failure_denominator": 31,
+      "aligned": true,
+      "conditions": {
+        "auroc": true,
+        "ap": true,
+        "each_auroc_within_0.01": true
+      },
+      "statistics": {
+        "expected": 31,
+        "finite": 31,
+        "complete": true,
+        "M": {
+          "denominator": 31,
+          "auroc": 0.9889888337468983,
+          "ap": 0.995191421481744,
+          "perfect_count": 26,
+          "perfect_rate": 0.8387096774193549,
+          "imperfect_count": 5,
+          "L": 0.0008420772069404202,
+          "bootstrap_95": {
+            "auroc": [
+              0.9795285359801489,
+              0.9975186104218362
+            ],
+            "ap": [
+              0.9902835873803615,
+              0.9992910315490959
+            ],
+            "perfect_rate": [
+              0.7096774193548387,
+              0.967741935483871
+            ],
+            "L": [
+              0.0,
+              0.00216256643855764
+            ]
+          }
+        },
+        "S": {
+          "denominator": 22,
+          "auroc": 0.9844842657342657,
+          "ap": 0.9932242757242755,
+          "perfect_count": 17,
+          "perfect_rate": 0.7727272727272727,
+          "imperfect_count": 5,
+          "L": 0.0011865633370524104,
+          "bootstrap_95": {
+            "auroc": [
+              0.9711538461538463,
+              0.9943181818181818
+            ],
+            "ap": [
+              0.9866983016983016,
+              0.999250749250749
+            ],
+            "perfect_rate": [
+              0.5909090909090909,
+              0.9090909090909091
+            ],
+            "L": [
+              0.0,
+              0.0030472527088766747
+            ]
+          }
+        },
+        "overflow": 0.0,
+        "overflow_denominator": 22,
+        "overflow_sentence": "本队列上两套标签的宏平均 AUROC 差距小于 0.02。"
+      },
+      "tolerance_enabled": true
+    },
+    {
+      "item": "pattern12_R2",
+      "pattern": 12,
+      "readout": "R2",
+      "model": "regular",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 9999,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 9999,
+        "finite": 9580,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    },
+    {
+      "item": "pattern12_R1",
+      "pattern": 12,
+      "readout": "R1",
+      "model": "regular",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 9999,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 9999,
+        "finite": 9580,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    },
+    {
+      "item": "pattern12_anti",
+      "pattern": 12,
+      "readout": "R2",
+      "model": "anti",
+      "status": "队列未对齐",
+      "failures": 0,
+      "failure_denominator": 9999,
+      "aligned": false,
+      "conditions": {},
+      "statistics": {
+        "expected": 9999,
+        "finite": 9580,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "tolerance_enabled": false
+    }
+  ],
+  "P4_total": "队列未对齐",
+  "P0": {
+    "classification_failed": false,
+    "technical_failed": false,
+    "queue_misaligned": true,
+    "lookup_complete": true,
+    "configurations": [
+      {
+        "pattern": 4,
+        "model": "regular",
+        "side": "positive",
+        "denominator": 1146,
+        "finite": 1022,
+        "failures": 0,
+        "missing": 124,
+        "outside_domain": 124,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 4,
+        "model": "regular",
+        "side": "negative",
+        "denominator": 10000,
+        "finite": 9092,
+        "failures": 0,
+        "missing": 908,
+        "outside_domain": 908,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 5,
+        "model": "regular",
+        "side": "positive",
+        "denominator": 34,
+        "finite": 34,
+        "failures": 0,
+        "missing": 0,
+        "outside_domain": 0,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 5,
+        "model": "regular",
+        "side": "negative",
+        "denominator": 10000,
+        "finite": 7821,
+        "failures": 0,
+        "missing": 2179,
+        "outside_domain": 2179,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 12,
+        "model": "regular",
+        "side": "positive",
+        "denominator": 10000,
+        "finite": 9581,
+        "failures": 0,
+        "missing": 419,
+        "outside_domain": 419,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 12,
+        "model": "anti",
+        "side": "positive",
+        "denominator": 10000,
+        "finite": 9581,
+        "failures": 0,
+        "missing": 419,
+        "outside_domain": 419,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 12,
+        "model": "regular",
+        "side": "negative",
+        "denominator": 10000,
+        "finite": 9589,
+        "failures": 0,
+        "missing": 411,
+        "outside_domain": 411,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      },
+      {
+        "pattern": 12,
+        "model": "anti",
+        "side": "negative",
+        "denominator": 10000,
+        "finite": 9589,
+        "failures": 0,
+        "missing": 411,
+        "outside_domain": 411,
+        "missing_or_ambiguous_labels": 0,
+        "classification_mismatches": 0,
+        "zero_baseline_failures": 0
+      }
+    ],
+    "complete": false,
+    "status": "队列未对齐"
+  },
+  "P1": {
+    "examples": [
+      {
+        "pattern": 4,
+        "Q": true,
+        "conditions": [
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        "S": false,
+        "C": 0.0024864142650329324,
+        "IG_signed": 0.04107591386817773,
+        "R": 1.0088354813696583,
+        "L": 0.0691072416329351,
+        "M": {
+          "motif_atoms": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            18
+          ],
+          "auroc": 0.9560439560439561,
+          "ap": 0.939533756841449,
+          "perfect": false,
+          "L": 0.0691072416329351
+        },
+        "S_track": {
+          "motif_atoms": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            18
+          ],
+          "auroc": 0.9560439560439561,
+          "ap": 0.939533756841449,
+          "perfect": false,
+          "L": 0.0691072416329351
+        }
+      },
+      {
+        "pattern": 5,
+        "Q": true,
+        "conditions": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "S": true,
+        "C": 0.0021003336633711456,
+        "IG_signed": 0.008503250918234648,
+        "R": 0.9995324414129143,
+        "L": 0.014549403717223488,
+        "M": {
+          "motif_atoms": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "auroc": 0.9230769230769231,
+          "ap": 0.9945054945054943,
+          "perfect": false,
+          "L": 0.014549403717223488
+        },
+        "S_track": {
+          "motif_atoms": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "auroc": 0.9230769230769231,
+          "ap": 0.9945054945054943,
+          "perfect": false,
+          "L": 0.014549403717223488
+        }
+      }
+    ],
+    "Q": true,
+    "S": false
+  },
+  "P2": {
+    "N": 16,
+    "cells": [
+      {
+        "index": 0,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 1,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 2,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 3,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 4,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 5,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 6,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 7,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 8,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 9,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 10,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 11,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 12,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 13,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 14,
+        "model": "regular",
+        "complete": true,
+        "C10k": 2.3806769000600525e-08,
+        "C20k": 5.719608986431979e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 15,
+        "model": "regular",
+        "complete": true,
+        "C10k": 6.55217631262417e-08,
+        "C20k": 8.214196345335267e-08,
+        "L1": 1.1102230246251565e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 0,
+        "model": "anti",
+        "complete": true,
+        "C10k": 3.9259576688266407e-05,
+        "C20k": 5.140841598150203e-05,
+        "L1": 2.6042536183101817e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 1,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.005014265190802059,
+        "C20k": 0.0024645453620679714,
+        "L1": 1.4765966227514582e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 2,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.007684416193876276,
+        "C20k": 0.0009467724176271952,
+        "L1": 1.7041923427996153e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 3,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.008548619473174646,
+        "C20k": 0.00036404322803496036,
+        "L1": 1.7638776723949423e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 4,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.0013353069358941205,
+        "C20k": 0.0013232870683473896,
+        "L1": 2.413434035952733e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 5,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.005014265190802059,
+        "C20k": 0.0024645453620679714,
+        "L1": 1.4765966227514582e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 6,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.005014265190802059,
+        "C20k": 0.0024645453620679714,
+        "L1": 1.4765966227514582e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 7,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.007199761397622018,
+        "C20k": 0.0011247051425329335,
+        "L1": 1.677434233182673e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 8,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.002061537013325232,
+        "C20k": 0.00205070398012408,
+        "L1": 3.885780586188048e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 9,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.007199761397622018,
+        "C20k": 0.0011247051425329335,
+        "L1": 1.7031948768009286e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 10,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.002164879857740498,
+        "C20k": 0.0021527168751396264,
+        "L1": 3.209238430557093e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 11,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.005014265190802059,
+        "C20k": 0.0024645453620679714,
+        "L1": 1.4765966227514582e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 12,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.004788102203660771,
+        "C20k": 0.00409915220863688,
+        "L1": 1.7813875374805832e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 13,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.00012238855715107633,
+        "C20k": 0.00010993349274235342,
+        "L1": 1.7683337433238577e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 14,
+        "model": "anti",
+        "complete": true,
+        "C10k": 8.066444197041278e-07,
+        "C20k": 6.134051676820462e-06,
+        "L1": 2.7755575615628914e-16,
+        "auroc_change": 0.0,
+        "passed": true
+      },
+      {
+        "index": 15,
+        "model": "anti",
+        "complete": true,
+        "C10k": 0.008656313798146353,
+        "C20k": 9.423817885401142e-05,
+        "L1": 1.684763439868675e-14,
+        "auroc_change": 0.0,
+        "passed": true
+      }
+    ],
+    "complete": true,
+    "passed": true,
+    "technical_configurations": [
+      {
+        "configuration": "conf_regular_10000",
+        "F": 0,
+        "M": 16,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "conf_regular_20000",
+        "F": 0,
+        "M": 16,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "conf_anti_10000",
+        "F": 0,
+        "M": 16,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "conf_anti_20000",
+        "F": 0,
+        "M": 16,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "mechanism_single_R2",
+        "F": 0,
+        "M": 2,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "mechanism_single_R1",
+        "F": 0,
+        "M": 2,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "mechanism_full_R2",
+        "F": 0,
+        "M": 2,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "mechanism_ig",
+        "F": 0,
+        "M": 2,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "low_12_R2_regular",
+        "F": 0,
+        "M": 9999,
+        "exceeds_5_percent": false
+      },
+      {
+        "configuration": "low_12_R2_anti",
+        "F": 0,
+        "M": 9999,
+        "exceeds_5_percent": false
+      }
+    ]
+  },
+  "P3": {
+    "low_queue_aligned": false,
+    "low": {
+      "regular": {
+        "expected": 9999,
+        "finite": 9580,
+        "complete": false,
+        "M": null,
+        "S": null
+      },
+      "anti": {
+        "expected": 9999,
+        "finite": 9580,
+        "complete": false,
+        "M": null,
+        "S": null
+      }
+    },
+    "high": {
+      "regular": {
+        "expected": 16,
+        "finite": 16,
+        "complete": true,
+        "M": {
+          "denominator": 16,
+          "auroc": 1.0,
+          "ap": 1.0,
+          "perfect_count": 16,
+          "perfect_rate": 1.0,
+          "imperfect_count": 0,
+          "L": 0.0,
+          "bootstrap_95": {
+            "auroc": [
+              1.0,
+              1.0
+            ],
+            "ap": [
+              1.0,
+              1.0
+            ],
+            "perfect_rate": [
+              1.0,
+              1.0
+            ],
+            "L": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "S": {
+          "denominator": 16,
+          "auroc": 1.0,
+          "ap": 1.0,
+          "perfect_count": 16,
+          "perfect_rate": 1.0,
+          "imperfect_count": 0,
+          "L": 0.0,
+          "bootstrap_95": {
+            "auroc": [
+              1.0,
+              1.0
+            ],
+            "ap": [
+              1.0,
+              1.0
+            ],
+            "perfect_rate": [
+              1.0,
+              1.0
+            ],
+            "L": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "overflow": 0.0,
+        "overflow_denominator": 16,
+        "overflow_sentence": "本队列上两套标签的宏平均 AUROC 差距小于 0.02。"
+      },
+      "anti": {
+        "expected": 16,
+        "finite": 16,
+        "complete": true,
+        "M": {
+          "denominator": 16,
+          "auroc": 0.9898032431266447,
+          "ap": 0.9291666666666667,
+          "perfect_count": 6,
+          "perfect_rate": 0.375,
+          "imperfect_count": 10,
+          "L": 0.22708703433917649,
+          "bootstrap_95": {
+            "auroc": [
+              0.9838896885795161,
+              0.9949300296986238
+            ],
+            "ap": [
+              0.9010416666666667,
+              0.959375
+            ],
+            "perfect_rate": [
+              0.125,
+              0.625
+            ],
+            "L": [
+              0.14368730948690664,
+              0.3047118387286019
+            ]
+          }
+        },
+        "S": {
+          "denominator": 16,
+          "auroc": 0.9898032431266447,
+          "ap": 0.9291666666666667,
+          "perfect_count": 6,
+          "perfect_rate": 0.375,
+          "imperfect_count": 10,
+          "L": 0.22708703433917649,
+          "bootstrap_95": {
+            "auroc": [
+              0.9838896885795161,
+              0.9949300296986238
+            ],
+            "ap": [
+              0.9010416666666667,
+              0.959375
+            ],
+            "perfect_rate": [
+              0.125,
+              0.625
+            ],
+            "L": [
+              0.14368730948690664,
+              0.3047118387286019
+            ]
+          }
+        },
+        "overflow": 0.0,
+        "overflow_denominator": 16,
+        "overflow_sentence": "本队列上两套标签的宏平均 AUROC 差距小于 0.02。"
+      }
+    },
+    "d50": null,
+    "d20k": 0.625,
+    "d20k_formatted": "+0.625000",
+    "B": null,
+    "G": true,
+    "A": true,
+    "P3": null
+  },
+  "P5": "队列未对齐",
+  "permutation_sentence": "置乱后排序相关无法计算，本项不支持归因跟随中间层。",
+  "terminal": "输入或实现资格不足：P0 队列未对齐、P3 低步队列未对齐。",
+  "pattern_12_tracks": "两套 SMARTS 相同，溢出按定义为 0。",
+  "P5_statistics": {
+    "ablation": {
+      "expected": 9999,
+      "finite": 9580,
+      "complete": false,
+      "M": null,
+      "S": null
+    },
+    "anti": {
+      "expected": 9999,
+      "finite": 9580,
+      "complete": false,
+      "M": null,
+      "S": null
+    },
+    "failures": 0,
+    "ablation_failures": 0,
+    "anti_failures": 0,
+    "failure_denominator": 9999,
+    "note": "完美率变化同时混合了冗余传播层的移除和感受野从 6 跳缩到 2 跳。本实验不能把完美率变化单独归因于冗余扩散。"
+  },
+  "permutation": {
+    "complete": true,
+    "molecules": [
+      {
+        "index": 0,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 1,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 2,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 3,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 4,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 5,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 6,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 7,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 8,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 9,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 10,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 11,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 12,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 13,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 14,
+        "rho": null,
+        "classification_agrees": false
+      },
+      {
+        "index": 15,
+        "rho": null,
+        "classification_agrees": false
+      }
+    ],
+    "mean_rho": null,
+    "undefined": 16,
+    "classification_agreement": 0.0
+  },
+  "tuple": [
+    "输入或实现资格不足：P0 队列未对齐、P3 低步队列未对齐。",
+    "队列未对齐",
+    "队列未对齐",
+    "置乱后排序相关无法计算，本项不支持归因跟随中间层。"
+  ]
+}

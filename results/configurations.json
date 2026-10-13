@@ -1,0 +1,353 @@
+[
+  {
+    "configuration": "auc_12_R2_regular",
+    "scheduled": 9580,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9580,
+    "successful": 9580,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_4_R2_regular",
+    "scheduled": 1013,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 1013,
+    "successful": 1013,
+    "failed": 0
+  },
+  {
+    "configuration": "mechanism_R2_20000",
+    "scheduled": 2,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  {
+    "configuration": "mechanism_full_R2",
+    "scheduled": 2,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  {
+    "configuration": "mechanism_single_R2",
+    "scheduled": 2,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  {
+    "configuration": "mechanism_single_R1",
+    "scheduled": 2,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  {
+    "configuration": "conf_regular_10000",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "conf_regular_20000",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "conf_anti_10000",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "conf_anti_20000",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_5_R2_regular",
+    "scheduled": 31,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 31,
+    "successful": 31,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_5_R1_regular",
+    "scheduled": 31,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 31,
+    "successful": 31,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_5_regular_positive",
+    "scheduled": 34,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 34,
+    "successful": 34,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_5_regular_negative",
+    "scheduled": 7821,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 7821,
+    "successful": 7821,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_4_R1_regular",
+    "scheduled": 1013,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 1013,
+    "successful": 1013,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_4_regular_positive",
+    "scheduled": 1022,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 1022,
+    "successful": 1022,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_4_regular_negative",
+    "scheduled": 9092,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9092,
+    "successful": 9092,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_12_R1_regular",
+    "scheduled": 9580,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9580,
+    "successful": 9580,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_12_regular_positive",
+    "scheduled": 9581,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9581,
+    "successful": 9581,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_12_anti_positive",
+    "scheduled": 9581,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9581,
+    "successful": 9581,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_12_regular_negative",
+    "scheduled": 9589,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9589,
+    "successful": 9589,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_12_anti_negative",
+    "scheduled": 9589,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9589,
+    "successful": 9589,
+    "failed": 0
+  },
+  {
+    "configuration": "cls_12_ablation_positive",
+    "scheduled": 9581,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9581,
+    "successful": 9581,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_12_R2_anti",
+    "scheduled": 9580,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9580,
+    "successful": 9580,
+    "failed": 0
+  },
+  {
+    "configuration": "auc_12_R2_ablation",
+    "scheduled": 9580,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 9580,
+    "successful": 9580,
+    "failed": 0
+  },
+  {
+    "configuration": "control_regular_saliency",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_regular_input_x_gradient",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_regular_zero_node_input_edge",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_regular_tenth",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_anti_reference",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_anti_saliency",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_anti_input_x_gradient",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_anti_zero_node_input_edge",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_anti_tenth",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "control_permuted",
+    "scheduled": 16,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 16,
+    "successful": 16,
+    "failed": 0
+  },
+  {
+    "configuration": "syntax_regular",
+    "scheduled": 10,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  {
+    "configuration": "syntax_anti",
+    "scheduled": 10,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  {
+    "configuration": "extended_regular",
+    "scheduled": 6,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 6,
+    "successful": 6,
+    "failed": 0
+  },
+  {
+    "configuration": "extended_anti",
+    "scheduled": 6,
+    "remaining": 0,
+    "execution_status": "调用完成",
+    "attempted": 6,
+    "successful": 6,
+    "failed": 0
+  }
+]
